@@ -1,3 +1,26 @@
+## sparse_bundle_adjustment (kinetic) - 0.3.2-0
+
+The packages in the `sparse_bundle_adjustment` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic sparse_bundle_adjustment` on `Tue, 23 Aug 2016 16:07:53 -0000`
+
+The `sparse_bundle_adjustment` package was released.
+
+Version of package(s) in repository `sparse_bundle_adjustment`:
+
+- upstream repository: https://github.com/ros-perception/sparse_bundle_adjustment.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.3.2-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## sparse_bundle_adjustment (hydro) - 0.3.2-0
 
 The packages in the `sparse_bundle_adjustment` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -t hydro -r hydro sparse_bundle_adjustment --new-track` on `Fri, 20 Jun 2014 23:42:30 -0000`
