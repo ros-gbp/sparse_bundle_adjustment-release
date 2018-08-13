@@ -1,0 +1,22 @@
+ros-lunar-sparse-bundle-adjustment (0.3.2-0xenial) xenial; urgency=high
+
+  * major build/install fixes for the farm
+  * Contributors: Michael Ferguson
+
+ -- Michael Ferguson <fergs@unboundedrobotics.com>  Tue, 17 Jun 2014 04:00:00 -0000
+
+ros-lunar-sparse-bundle-adjustment (0.3.1-0xenial) xenial; urgency=high
+
+  * add depend on eigen
+  * Contributors: Michael Ferguson
+
+ -- Michael Ferguson <fergs@unboundedrobotics.com>  Tue, 17 Jun 2014 04:00:00 -0000
+
+ros-lunar-sparse-bundle-adjustment (0.3.0-0xenial) xenial; urgency=high
+
+  * import cleaned up sba (this is the version from wg)
+  * Contributors: Michael Ferguson
+
+ -- Michael Ferguson <fergs@unboundedrobotics.com>  Mon, 16 Jun 2014 04:00:00 -0000
+
+
