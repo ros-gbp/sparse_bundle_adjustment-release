@@ -1,3 +1,26 @@
+## sparse_bundle_adjustment (lunar) - 0.4.2-0
+
+The packages in the `sparse_bundle_adjustment` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -r lunar -t lunar sparse_bundle_adjustment` on `Thu, 23 Aug 2018 20:08:19 -0000`
+
+The `sparse_bundle_adjustment` package was released.
+
+Version of package(s) in repository `sparse_bundle_adjustment`:
+
+- upstream repository: https://github.com/ros-perception/sparse_bundle_adjustment.git
+- release repository: https://github.com/ros-gbp/sparse_bundle_adjustment-release.git
+- rosdistro version: `0.3.2-0`
+- old version: `0.3.2-0`
+- new version: `0.4.2-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.6`
+- vcstools version: `0.1.40`
+
+
 ## sparse_bundle_adjustment (melodic) - 0.4.1-0
 
 The packages in the `sparse_bundle_adjustment` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic sparse_bundle_adjustment` on `Tue, 21 Aug 2018 22:57:15 -0000`
