@@ -1,14 +1,15 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.1)
 project(sparse_bundle_adjustment)
 
-find_package(catkin REQUIRED
-  COMPONENTS
-    cmake_modules
-)
-find_package(Eigen REQUIRED)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 11)
+endif()
 
-include_directories(${catkin_INCLUDE_DIRS} ${EIGEN_INCLUDE_DIRS})
-add_definitions(${EIGEN_DEFINITIONS})
+find_package(catkin REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+include_directories(${catkin_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS})
+add_definitions(${EIGEN3_DEFINITIONS})
 
 INCLUDE_DIRECTORIES(include)
 
