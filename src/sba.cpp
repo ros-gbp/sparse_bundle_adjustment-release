@@ -37,6 +37,7 @@
 //
 
 #include "sparse_bundle_adjustment/sba.h"
+#include <chrono>
 
 using namespace Eigen;
 using namespace std;
@@ -44,15 +45,10 @@ using namespace std;
 //#define DEBUG
 
 // elapsed time in microseconds
-#include <sys/time.h>
 static long long utime()
 {
-  timeval tv;
-  gettimeofday(&tv,NULL);
-  long long ts = tv.tv_sec;
-  ts *= 1000000;
-  ts += tv.tv_usec;
-  return ts;
+  auto duration = std::chrono::system_clock::now().time_since_epoch();
+  return std::chrono::duration_cast<std::chrono::microseconds>(duration).count();
 }
 
 
@@ -1141,10 +1137,10 @@ void SysSBA::setupSys(double sLambda)
     // check the matrix and vector
     for (int i=0; i<6*nFree; i++)
       for (int j=0; j<6*nFree; j++)
-        if (isnan(A(i,j)) ) { printf("[SetupSys] NaN in A\n"); *(int *)0x0 = 0; }
+        if (std::isnan(A(i,j)) ) { printf("[SetupSys] NaN in A\n"); *(int *)0x0 = 0; }
 
     for (int j=0; j<6*nFree; j++)
-      if (isnan(B[j]) ) { printf("[SetupSys] NaN in B\n"); *(int *)0x0 = 0; }
+      if (std::isnan(B[j]) ) { printf("[SetupSys] NaN in B\n"); *(int *)0x0 = 0; }
 
     int ndc = 0;
     for (int i=0; i<nFree; i++)

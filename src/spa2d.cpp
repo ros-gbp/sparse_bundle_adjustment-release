@@ -39,6 +39,7 @@
 #include <stdio.h>
 #include "sparse_bundle_adjustment/spa2d.h"
 #include <Eigen/Cholesky>
+#include <chrono>
 
 using namespace Eigen;
 using namespace std;
@@ -46,17 +47,12 @@ using namespace std;
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <sys/time.h>
 
 // elapsed time in microseconds
 static long long utime()
 {
-  timeval tv;
-  gettimeofday(&tv,NULL);
-  long long ts = tv.tv_sec;
-  ts *= 1000000;
-  ts += tv.tv_usec;
-  return ts;
+  auto duration = std::chrono::system_clock::now().time_since_epoch();
+  return std::chrono::duration_cast<std::chrono::microseconds>(duration).count();
 }
 
 namespace sba
@@ -313,10 +309,10 @@ namespace sba
     // check the matrix and vector
     for (int i=0; i<3*nFree; i++)
       for (int j=0; j<3*nFree; j++)
-        if (isnan(A(i,j)) ) { printf("[SetupSys] NaN in A\n"); *(int *)0x0 = 0; }
+        if (std::isnan(A(i,j)) ) { printf("[SetupSys] NaN in A\n"); *(int *)0x0 = 0; }
 
     for (int j=0; j<3*nFree; j++)
-      if (isnan(B[j]) ) { printf("[SetupSys] NaN in B\n"); *(int *)0x0 = 0; }
+      if (std::isnan(B[j]) ) { printf("[SetupSys] NaN in B\n"); *(int *)0x0 = 0; }
 
     int ndc = 0;
     for (int i=0; i<nFree; i++)
