@@ -2,6 +2,11 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.4 (2020-03-28)
+------------------
+* fix unitialized variable causing crashes (`#10 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/10>`_)
+* Contributors: Michael Ferguson
+
 0.4.3 (2020-01-31)
 ------------------
 * remove bouncing email from maintainers
