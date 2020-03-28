@@ -1,0 +1,32 @@
+ros-kinetic-sparse-bundle-adjustment (0.3.3-1xenial) xenial; urgency=high
+
+  * fix unitialized variable causing crashes (#10 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/10>)
+  * Update email address so I see build failures
+  * Merge pull request #2 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/2> from ros-perception/maintainer-add
+  * Adding myself as a maintainer for sparse_bundle_adjustment
+  * Contributors: Luc Bettaieb, Michael Ferguson
+
+ -- Michael Ferguson <mfergs7@gmail.com>  Sat, 28 Mar 2020 04:00:00 -0000
+
+ros-kinetic-sparse-bundle-adjustment (0.3.2-1xenial) xenial; urgency=high
+
+  * major build/install fixes for the farm
+  * Contributors: Michael Ferguson
+
+ -- Michael Ferguson <fergs@unboundedrobotics.com>  Tue, 17 Jun 2014 04:00:00 -0000
+
+ros-kinetic-sparse-bundle-adjustment (0.3.1-1xenial) xenial; urgency=high
+
+  * add depend on eigen
+  * Contributors: Michael Ferguson
+
+ -- Michael Ferguson <fergs@unboundedrobotics.com>  Tue, 17 Jun 2014 04:00:00 -0000
+
+ros-kinetic-sparse-bundle-adjustment (0.3.0-1xenial) xenial; urgency=high
+
+  * import cleaned up sba (this is the version from wg)
+  * Contributors: Michael Ferguson
+
+ -- Michael Ferguson <fergs@unboundedrobotics.com>  Mon, 16 Jun 2014 04:00:00 -0000
+
+
