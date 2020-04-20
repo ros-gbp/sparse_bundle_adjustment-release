@@ -1,3 +1,26 @@
+## sparse_bundle_adjustment (noetic) - 0.4.4-1
+
+The packages in the `sparse_bundle_adjustment` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic sparse_bundle_adjustment` on `Mon, 20 Apr 2020 14:32:45 -0000`
+
+The `sparse_bundle_adjustment` package was released.
+
+Version of package(s) in repository `sparse_bundle_adjustment`:
+
+- upstream repository: https://github.com/ros-perception/sparse_bundle_adjustment.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.4.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.15.1`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## sparse_bundle_adjustment (melodic) - 0.4.4-1
 
 The packages in the `sparse_bundle_adjustment` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic sparse_bundle_adjustment` on `Sat, 28 Mar 2020 20:46:34 -0000`
